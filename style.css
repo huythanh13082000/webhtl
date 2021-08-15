@@ -1,0 +1,88 @@
+body{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: 0px;
+  
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header{
+    background-color: black;
+    display: flex;
+    height: 80px;
+}
+.hd_login{
+    margin-left:160px ;
+    padding-top:26px;
+    width: 506px;
+}
+
+.hd_cart{
+
+    padding-top:26px ;
+    padding-left: 350px;
+    
+}
+.header .hd_login a{
+    text-decoration: none;
+    color: #FFFFFFCC;
+    font-size: 14px ; 
+}
+.header .hd_logo img{
+    height: 80px;
+
+}
+.header .hd_cart a{
+    text-decoration: none;
+    color: #FFFFFFCC;
+    font-size: 17px;
+    
+}
+.menu_container{
+    color: black;
+    font-size: 14px;
+    background-color:rgb(231, 228, 228);
+    padding-left: 300px;
+    padding-top: 12px;
+    padding-bottom: 1px;
+}
+.ul_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.ul_menu li {
+    padding-left: 35px;
+}
+.ul_menu li a{
+    text-decoration: none;
+    color: black;
+}
+.ul_menu li a:hover{
+    border-bottom : 3px solid rgb(245, 4, 4);
+}
+.hd_login a:hover{
+    color: white;
+}
+.hd_cart a:hover{
+    color: white;
+}
+.slide{
+    margin-top: 170px;
+    width: 1200px; 
+    margin-right: auto;
+    margin-left: auto;
+    position: static;
+
+}
+.slide img{
+    width: 100%;
+}
+
+
+
