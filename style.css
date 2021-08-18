@@ -22,6 +22,7 @@ header{
     width: 506px;
 }
 
+
 .hd_cart{
 
     padding-top:26px ;
@@ -33,6 +34,9 @@ header{
     color: #FFFFFFCC;
     font-size: 14px ; 
 }
+.header .hd_login a:hover{
+    color: white;
+}
 .header .hd_logo img{
     height: 80px;
 
@@ -43,46 +47,491 @@ header{
     font-size: 17px;
     
 }
-.menu_container{
-    color: black;
-    font-size: 14px;
-    background-color:rgb(231, 228, 228);
-    padding-left: 300px;
-    padding-top: 12px;
-    padding-bottom: 1px;
+.header .hd_cart a:hover{
+    color: white;
 }
-.ul_menu{
+/* slide */
+.slide{
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 170px;
+}
+.slide .carousel-inner img{
+    width: 1200px;
+    height: 500px ;
+    
+}
+
+
+
+.menu_container {
+    
+    background-color: rgb(216, 213, 219);
+    height: 48px;
+   position: fixed;
+   top: 80px;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   padding-left: 260px;
+
+    
+}
+
+.menu_container > ul{
+    
     display: flex;
-    align-items: center;
     list-style: none;
 }
-.ul_menu li {
-    padding-left: 35px;
+.menu_container li{
+    margin-left: 43px;
 }
-.ul_menu li a{
-    text-decoration: none;
+.menu_container .menu > a{
     color: black;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 14px;
+    text-decoration: none;
 }
-.ul_menu li a:hover{
-    border-bottom : 3px solid rgb(245, 4, 4);
+.menu_container .menu{
+    position: relative;
+    
 }
-.hd_login a:hover{
-    color: white;
+.menu_container .menu:hover{
+    border-bottom: 3px solid red;
 }
-.hd_cart a:hover{
-    color: white;
+.menu_container .list{
+    transition: 0.4s;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    border: 3px solid rgb(109, 105, 105);
+    height: 260px;
+    width: 240px;
+    z-index: 1;
+    border-radius: 1%;
 }
-.slide{
-    margin-top: 170px;
-    width: 1200px; 
-    margin-right: auto;
-    margin-left: auto;
-    position: static;
+.menu_container .menu .list li{
+    width: 237px;
+    border-right: 1px solid rgb(141, 143, 142);
+    border-bottom: 1px solid rgb(141, 143, 142);
+    padding-top: 15px;
+    padding-bottom:5px ;
+    margin-left: -40px;
+    padding-left: 20px;
+    border-radius: 1%;
+}
+.menu_container .menu .list li:hover{
+    background-color: rgb(175, 171, 171);
+}
+.menu_container .menu:hover .list{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.menu_container .menu .list ul{
+   list-style: none;
+  
+}
+.menu_container .menu .list a{
+    color: rgb(114, 110, 110);
+    font-size: 17px;
+    text-decoration: none;
+}
+.menu_container .menu .list .li1:hover .sp1{
+    color: rgb(207, 34, 34)
+}
+.menu_container .menu .list .li2:hover .sp2{
+    color: red
+}
+.menu_container .menu .list .li3:hover .sp3{
+    color: red
+}
+.menu_container .menu .list .li4:hover .sp4{
+    color: red
+}
+.menu_container .menu .list .li5:hover .sp5{
+    color: red
+}
+/* panel_product */
+
+.panel_product{
+    display: flex;
+    height: 400px;
+    width: 1200px;
+    margin-top: 60px;
+    margin-left: 160px;
+    margin-right: 160px;
+    justify-content: space-between;
+}
+
+.panel_product .panel{
+    width: 30%;
+    height: 90%;
+    position: relative;
 
 }
-.slide img{
+
+.panel_product .panel img{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+.panel_product .panel .layer1{
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    background-color: black;
+    padding: 5px;
+    opacity: 0;
+    transition: 0.4s;
+    transform: scale(0.01);
+}
+.panel_product .panel .layer1 span{
+    font-weight: bold;
+    color:white;
+}
+.panel_product .panel:hover .layer1{
+    opacity: 1;
+    transform: scale(1);
+}
+.panel_product .panel:hover{
+    border: black 1px solid;
+}
+/* product */
+.product{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.product .menu_product{
+    display: flex;
+    margin-left: 29%;
+}
+.product .menu_product .new_product{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+.product .menu_product .hot_product{
+    color: rgb(129, 126, 126);
+    padding: 10px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.product .menu_product .hot_product:hover{
+    background-color: black;
+    color: white;
+}
+.product .menu_product .common_product{
+    color: rgb(129, 126, 126);
+    padding: 10px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.product .menu_product .common_product:hover{
+    background-color: black;
+    color: white;
+}
+.product .product_container{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    
+}
+.product_container .product1 {
+    width: 24%;
+    padding: 10px;
+    text-align: center;
+}
+.product_container .product1 img{
     width: 100%;
 }
+.product_container .product1 .red{
+    color: rgb(245, 9, 9);
+    font-weight: bold;
+}
+.product_container .product1 .insert_cart{
+    background-color: rgb(207, 34, 34);
+    color: white;
+    margin-left:25% ;
+    margin-right: 25%;
+    padding: 5px;
+    opacity: 0;
+    transform: scale(0.01);
+    transition: 0.4s;
+    font-weight: bold;
+}
+.product_container .product1:hover .insert_cart{
+    opacity: 1;
+    transform: scale(1);
+}
 
 
+/* Parent */
 
+
+.parent{
+    margin-left: 160px;
+    margin-right: 160px;
+    text-align: center;
+   
+
+}
+.parent_container{
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.text_parent{
+    font-size: 20px;
+    font-weight: bold;
+}
+.parent .parent_product{
+    width: 23%;
+    height: 100%;
+    margin-top: 40px;
+    
+    
+}
+.parent .parent_product img{
+    width: 80%;
+    height: 80%;
+}
+.parent .parent_product .parent_information .parent_price{
+    color: rgb(207, 34, 34);
+    font-weight: bold;
+}
+.parent .parent_product .insert_cart{
+    color: white;
+    background-color: rgb(207, 34, 34);
+    padding: 5px;
+    opacity: 0;
+    transition: 0.4s;
+    transform: scale(0.01);
+    margin-left: 25%;
+    margin-right: 25%;
+    font-weight: bold;
+}
+.parent .parent_product:hover .insert_cart{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.parent .see_more a{
+    text-decoration: none;
+    color: rgb(134, 125, 125);
+    display: block;
+    margin-top: 60px;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding: 5px;
+    border: 1px solid rgb(134, 125, 125);
+    transition: 0.4s;
+    font-weight: bold;
+} 
+.parent .see_more a:hover{
+    background-color:black;
+    color: white;
+}
+
+
+/* product_sale */
+.product_sale{
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.product_sale .panel img{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+}
+.product_sale .panel {
+    position: relative;
+}
+.product_sale .panel .see_product{
+    position: absolute;
+    top: 65%;
+    left: 44%;
+}
+.product_sale .panel .see_product a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: 2px solid white;
+    padding: 10px;
+    font-weight: bold ;
+}
+.product_sale .panel .see_product a:hover{
+    background-color: black;
+    border: black 2px solid;
+}
+.product_sale >p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product_sale .s_product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+
+}
+.product_sale .s_product1{
+    width: 24%;
+    position: relative;
+    height: 100%;
+}
+.product_sale .s_product1 img{
+    width: 100%;
+    height: 80%;
+    
+}
+.product_sale .s_product1 >span{
+    opacity: 0.9;
+    font-weight: 500;
+    color: rgb(175, 48, 48);
+}
+.product_sale .s_product1 .price_product{
+    color: rgb(245, 9, 9);
+    font-weight: bold;
+}
+.product_sale .s_product1 .sale{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 48px;
+    color: white;
+    background-color: rgb(168, 20, 20);
+    font-weight: bold;
+    position: absolute;
+    top:30px;
+    left: 0;
+}
+
+.product_sale .s_product1 .insert_cart_sale a{
+    display: block;
+    color:white;
+    background-color: rgb(207, 34, 34); 
+    margin-left: 26%;
+    margin-right: 26%;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 500;
+    padding: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0.01);
+}
+.product_sale .s_product1:hover .insert_cart_sale a{
+       opacity: 1;
+       transform: scale(1);
+}
+
+/* footer */
+
+footer{
+    margin-top: 80px;
+    background-color: #1b1515;
+    color: white;
+    padding-bottom: 50px;
+}
+.f_introduce_container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.f_introduce_container .f_introduce {
+    width: 30%;
+}
+.f_introduce_container .f_introduce_menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.f_introduce_container .f_introduce_menu .container_a{
+    width: 40%;
+    
+}
+.f_introduce_container .f_introduce_menu .container_a a{
+    text-decoration: none;
+    color: #a4a4a4;
+    
+}
+.f_introduce_container .f_introduce_menu .container_a a:hover{
+    color: #aa1d1d;
+}
+.f_introduce_menu_social_network .f_introduce_menu_social_network_container {
+    display: flex;
+    justify-content: space-between;
+}
+.f_introduce_menu_social_network .f_introduce_menu_social_network_container .container_a   a{
+    text-decoration: none;
+    color: #ded3eb;
+    font-size: 30px;
+}
+.f_introduce_menu_social_network .f_introduce_menu_social_network_container .container_a{
+    width: 15%;
+}
+.f_introduce_menu_social_network .f_introduce_menu_social_network_container .container_a  a:hover{
+    color: #aa1d1d;
+}
+.f_information p{
+    font-weight: bold;
+
+}
+.f_information .f_introduce_container{
+    padding-top: 50px;
+}
+.f_introduce pre{
+    color: #a4a4a4;
+}
+.f_introduce_container{
+    border-bottom: white 1px solid;
+}
+
+/* f_register */
+.f_register{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 40px;
+    
+}
+.f_register .f_register_ip {
+    width: 30%;
+}
+.f_register .f_register_ip input{
+    width: 270px;
+    height: 46px;
+    border-radius: 5px;
+    margin: 0;
+}
+.f_register .f_register_ip a{
+    text-decoration: none;
+    color: rgb(255, 248, 248);
+    background-color: rgb(207, 34, 34);
+    padding: 13px;
+    margin: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.f_register .f_register_ip a:hover{
+    background-color: rgb(165, 40, 40);
+}
+.f_register span{
+        width: 20%;
+        font-weight: bold;
+        font-size: px;
+    }
+    .f_register img{
+        width: 40%;
+    }
